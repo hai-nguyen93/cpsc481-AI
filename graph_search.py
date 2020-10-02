@@ -30,8 +30,8 @@ def dfs(node):
 
 
 def best_first_search(start, goal):
-    # Each element in open_list and closed_list is a 4-tuple
-    # x = (node, g(n), h(n), path)
+    # Each element in open_list and closed_list is a 4-element list
+    # x = [node, g(n), h(n), path]
     open_list = [[start, 0, 0, str("")]]
     closed_list = []
     iter_num = 0
